@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> <link rel="icon" type="image/x-icon" href="e-vote logo.png">
- <link rel="icon" type="image/x-icon" href="e-vote logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School E-Voting System</title>
@@ -48,7 +47,7 @@
                             <span id="username-label">Student Code</span>
                             <i class="fas fa-user"></i>
                         </label>
-                        <input type="text" id="username" name="username" required>
+                        <input type="text" id="username" name="username" required autocomplete="off">
                     </div>
 
                     <div class="input-group">
@@ -56,7 +55,7 @@
                             Password
                             <i class="fas fa-lock"></i>
                         </label>
-                        <input type="password" id="password" name="password" required>
+                        <input type="password" id="password" name="password" required autocomplete="off">
                     </div>
 
                     <button type="submit" class="login-btn">
@@ -115,7 +114,7 @@
                         <span class="close">&times;</span>
                         <h4>Add New Voting Post</h4>
                         <form id="add-post-form">
-                            <input type="text" id="post-title" placeholder="Post Title (e.g., Student President)" required>
+                            <input type="text" id="post-title" placeholder="Post Title (e.g., Student President)" required autocomplete="off">
                             <textarea id="post-description" placeholder="Post Description" required></textarea>
                             <button type="submit">Create Post</button>
                         </form>
@@ -143,8 +142,8 @@
                             <select id="candidate-post" required>
                                 <option value="">Select Post</option>
                             </select>
-                            <input type="text" id="candidate-name" placeholder="Candidate Name" required>
-                            <input type="text" id="candidate-slogan" placeholder="Campaign Slogan" required>
+                            <input type="text" id="candidate-name" placeholder="Candidate Name" required autocomplete="off">
+                            <input type="text" id="candidate-slogan" placeholder="Campaign Slogan" required autocomplete="off">
                             
                             <!-- Image Upload Section -->
                             <div class="file-upload-section">
@@ -198,9 +197,9 @@
                         <span class="close">&times;</span>
                         <h4>Add New Voter</h4>
                         <form id="add-voter-form">
-                            <input type="text" id="voter-name" placeholder="Student Name" required>
-                            <input type="text" id="voter-code" placeholder="Student Code" required>
-                            <input type="password" id="voter-password" placeholder="Student Password" required>
+                            <input type="text" id="voter-name" placeholder="Student Name" required autocomplete="off">
+                            <input type="text" id="voter-code" placeholder="Student Code" required autocomplete="off">
+                            <input type="password" id="voter-password" placeholder="Student Password" required autocomplete="off">
                             <button type="submit">Add Voter</button>
                         </form>
                     </div>
@@ -233,7 +232,7 @@
                     </div>
                     
                     <form id="reset-votes-form">
-                        <input type="password" id="reset-password" placeholder="Enter Admin Password" required>
+                        <input type="password" id="reset-password" placeholder="Enter Admin Password" required autocomplete="off">
                         <button type="submit" class="btn btn-danger">
                             <i class="fas fa-redo"></i> Reset All Votes
                         </button>
